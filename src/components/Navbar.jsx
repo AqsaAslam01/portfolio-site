@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-// import Logo from '../assets/aa-logo.jpg';
+import Logo from '../assets/aa-logo.jpg';
+
 import { FaBars, FaTimes } from 'react-icons/fa'
 
 const Navbar = () => {
@@ -9,7 +10,7 @@ const Navbar = () => {
     return (
         <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
             <div>
-                <img alt="logo-image"></img>
+                <img src={Logo} alt="logo-image" style={{ width: '80px' }}></img>
             </div>
 
             <ul className="hidden md:flex">
