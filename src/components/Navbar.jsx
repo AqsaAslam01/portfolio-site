@@ -38,16 +38,16 @@ const Navbar = () => {
             <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
                 <ul>
                     <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
-                        <a className="flex justify-between items-center w-full text-gray-300" href="/">Linkedin<FaLinkedin size={30} /></a>
+                        <a className="flex justify-between items-center w-full text-gray-300" href="https://www.linkedin.com/in/aqsaaslam01/" target="_blank">Linkedin<FaLinkedin size={30} /></a>
                     </li>
                     <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]">
-                        <a className="flex justify-between items-center w-full text-gray-300" href="/">GitHub<FaGithub size={30} /></a>
+                        <a className="flex justify-between items-center w-full text-gray-300" href="https://github.com/AqsaAslam01" target="_blank">GitHub<FaGithub size={30} /></a>
                     </li>
                     <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#EA4335]">
-                        <a className="flex justify-between items-center w-full text-gray-300" href="/">Email<HiOutlineMail size={30} /></a>
+                        <a className="flex justify-between items-center w-full text-gray-300" href="mailto:aqsaaslam.78@gmail.com">Email<HiOutlineMail size={30} /></a>
                     </li>
                     <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
-                        <a className="flex justify-between items-center w-full text-gray-300" href="/">Resume<BsFillPersonLinesFill size={30} /></a>
+                        <a className="flex justify-between items-center w-full text-gray-300" href="https://drive.google.com/file/d/16M__X71sqvOeCWKs6o5AX1aeVwrKS3pr/view?usp=drive_link" target="_blank">Resume<BsFillPersonLinesFill size={30} /></a>
                     </li>
                 </ul>
             </div>
