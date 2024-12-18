@@ -3,7 +3,7 @@ import HTML from '../assets/html.png';
 import CSS from '../assets/css.png';
 import Javascript from '../assets/javascript.png';
 import ReactImg from '../assets/react.png';
-import Typescript from '../assets/TypeScript.png';
+import Typescript from '../assets/typescript.png';
 import Node from '../assets/node.png';
 import Github from '../assets/github.png';
 import Postgres from '../assets/postgres.png';
