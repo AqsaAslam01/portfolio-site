@@ -34,6 +34,14 @@ const Work = () => {
                                 <span className="text-2xl font bold text-white tracking-wider ">
                                     {item.name}
                                 </span>
+                                <p className="text-white text-sm mt-2 px-4">
+                                    {item.description}
+                                </p>
+                                {item.technologies?.length > 0 && (
+                                    <p className="text-white text-sm font-bold text-xs mt-2 px-4">
+                                        <strong>Technologies:</strong> {item.technologies.join(', ')}
+                                    </p>
+                                )}
                                 <div className="pt-8 text-center ">
                                     {/* eslint-disable-next-line */}
                                     <a href={item.github} target="_blank">
