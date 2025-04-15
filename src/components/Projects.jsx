@@ -18,58 +18,41 @@ const Projects = () => {
                     <p className='py-6'>Check out some of my recent work</p>
                 </div>
 
-                {/* container for projects */}
-                <div className="grid sm:grid-cols-2 md:grid-cols-2 gap-4">
-
-                    {/* Gird Item */}
+                {/* Vertical List of Projects */}
+                <div className="flex flex-col gap-10">
                     {project.map((item, index) => (
                         <div
-                            key={index}
-                            style={{ backgroundImage: `url(${item.image})`, height: '400px' }}
-                            className="shadow-lg shadow-[#040c16] group container rounded-md 
-                                    flex justify-center text-center items-center mx-auto content-div "
+                        className="group container rounded-md flex justify-center items-center mx-auto 
+                                   shadow-lg shadow-[#040c16] transition-transform duration-300 transform hover:scale-105 hover:shadow-pink-600"
                         >
-                            {/* Hover effect for images */}
-                            <div className="opacity-0 group-hover:opacity-100 ">
-                                <span className="text-2xl font bold text-white tracking-wider ">
-                                    {item.name}
-                                </span>
-                                <p className="text-white text-sm mt-2 px-4">
-                                    {item.description}
-                                </p>
+                            {/* Left Image */}
+                            <div className="w-full md:w-1/2">
+                                <img src={item.image} alt={item.name} className="w-full h-full object-cover" />
+                            </div>
+
+                            <div className="w-full md:w-1/2 p-6 md:ml-6">
+                                <h2 className="text-2xl font-bold text-pink-600">{item.name}</h2>
+                                <p className="mt-2 text-gray-300">{item.description}</p>
                                 {item.technologies?.length > 0 && (
-                                    <p className="text-white text-sm font-bold text-xs mt-2 px-4">
+                                    <p className="mt-2 text-sm text-gray-400">
                                         <strong>Technologies:</strong> {item.technologies.join(', ')}
                                     </p>
                                 )}
-                                <div className="pt-8 text-center ">
-                                    {/* eslint-disable-next-line */}
-                                    <a href={item.github} target="_blank">
-                                        <button
-                                            className="text-center rounded-lg px-4 py-3 m-2
-                                            bg-white text-gray-700 font-bold text-lg"
-                                        >
+                                <div className="mt-4">
+                                    <a href={item.github} target="_blank" rel="noreferrer">
+                                        <button className="bg-pink-600 hover:bg-pink-700 text-white px-4 py-2 rounded mr-4">
                                             Code
                                         </button>
                                     </a>
-                                    {/* eslint-disable-next-line */}
-                                    {/* <a href={item.live} target="_blank">
-                                        <button
-                                            className="text-center rounded-lg px-4 py-3 m-2
-                                             bg-white text-gray-700 font-bold text-lg"
-                                        >
-                                            Live
-                                        </button>
-                                    </a> */}
                                 </div>
                             </div>
+
                         </div>
                     ))}
-
-
                 </div>
             </div>
         </div>
+
     );
 };
 
