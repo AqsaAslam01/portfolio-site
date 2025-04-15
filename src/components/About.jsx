@@ -16,13 +16,14 @@ const About = () => {
                     </div>
                     <div>
                         <p>
-                            Passionate Full-Stack Software Engineer with 2 years of experience building
-                            high-performance web applications using MEAN  technologies. Skilled at transforming
-                            complex challenges into efficient, streamlined solutions, with expertise in Node.js,
-                            Express, Angular, and React. Recognized for a sharp attention to detail and a
-                            proactive problem-solving approach. Eager to bring innovative ideas and a
-                            forward-thinking mindset to a dynamic development team, ready to contribute from day
-                            one.
+                            I'm a passionate Full Stack Developer with 2+ years of experience crafting dynamic
+                            and responsive web applications using JavaScript, TypeScript, Node.js, and modern frontend
+                            frameworks like React. I love bridging the gap between design and technology,
+                            ensuring that the products I build are not only functional but also visually engaging.
+                            I've collaborated with cross-functional teams to deliver scalable solutions, ranging from 
+                            healthcare dashboards to intake form apps that streamline patient data. Currently, I’m focused on
+                            enhancing my frontend expertise and exploring animation and UI micro-interactions that elevate
+                            user experience. I'm a firm believer in clean code, continuous learning, and building for impact.
                         </p>
                     </div>
                 </div>
